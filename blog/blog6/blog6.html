@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog6</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+  	li{
+  		list-style-type: none;
+  		width: 
+
+  	}
+  	.label{
+  		
+  		padding-left: 0px;
+  	}
+  	.para_text{
+  		font-size: 19px;
+  		text-align:justify;
+  		padding-top: 30px;
+  	}
+  	.line_img img{
+  		width: 20px;
+  		height: 20px;
+  	}
+  	.iframe{
+  		
+  		width: 293px;
+  	}
+  	.iframe a{
+  		color: #000;
+  		text-decoration: none;
+  	}
+  	img{
+  		max-width: 100%;
+  	}
+  	.border{
+  		border: 1px solid grey;
+  		padding-bottom: 15px;
+  	}
+  	.li-padding{
+  		padding-left: 30px;
+  		list-style-type: circle;
+  	}
+  </style>
+</head>
+<body>
+
+<div class="container " style="width: 940px;height:3900px;padding: 0px">
+	<div class="container-fluid" style="padding-top: 25px">
+        	<div class="row allposts">
+	          <div class="col-sm-1 label">
+	            <li><a href="../blog1blogpage1.html">All Posts</a></li>
+	          </div>
+	          <div class="col-sm-2 label">
+	            <li>Getting Started</li>
+	          </div>
+	          <div class="col-sm-2 label">
+	            <li>Your Community</li>
+	          </div>
+	          <div class="col-sm-5"></div>
+	          <div class="col-sm-2 label">
+	             <input class="form-control ">
+        			  
+	          </div>
+        	</div>
+		</div>
+		
+		<div class="container" style="border: 1px solid grey;margin-top: 50px;">
+			
+			<div class="container" style=" max-width: 740px;width:100%;">
+				
+				<div class="row" style="padding-top: 50px">
+					
+					<div class="col-sm-4" style="padding-left: 0px;width:100%;">
+						4 days ago . 4 min read
+					</div>
+					<div class="col-sm-7"></div>
+					<div class="col-sm-1" style="padding-left:40px ">
+						:
+					</div>
+				</div>
+
+				<div class="row" style="font-size: 40px;padding-top: 10px;width:100%;">
+					Using Analytics to Prevent Customer Problems Before They Arise
+				</div>
+
+				<div class="row" style="padding-top: 50px;width:100%;">
+					<b style="font-size: 18px;">By Paul D. Berger and Bruce D. Weinberg | June 1, 2018</b>
+				</div>
+
+				<div class="row">
+					<img src="zigzag.png" class="img-responsive" style="width: 100%;padding-top: 50px">
+				</div>
+
+				<div class="row para_text">
+					A non-negligible percentage of customers who buy a new smartphone return it within the “free return” window. Many of these returners claim that the phone does not work correctly. However, the data clearly indicates that this is often not the real issue. The reality is that these customers simply don’t know how to use the smartphone well enough, and either do not realize it, or are not willing to admit it. So they return it — which makes a major profit difference for both the smartphone manufacturer and the service provider. For the latter, it could be on the order of thousands of dollars in lifetime value per customer (CLV).
+				</div>
+
+				<div class="row para_text">
+					Being able to foresee a return, and develop an intervention that can preempt it, can prevent these kinds of problems from occuring. This might be an “expert” (like a BestBuy Geek Squad member or an Apple Genius) calling the customer a few days after a purchase, asking about the new-smartphone experience, operation, and performance, and letting it be known that help is available 24/7 for any questions or assistance. This proactive engagement with the customer is substantively different from the salesperson letting the customer know at the time of purchase that help is available. Of course, it is not profitable to arrange this intervention with all new-smartphone-buying customers. Thus, a key issue is with whom to implement an intervention.
+				</div>
+				
+				<div class="row para_text">
+					We helped a client dealing with exactly this problem using a predictive model to rank-order each customer over a given period of time from high to low probability that a member is a “returner” (without an intervention). In a real-world test, the model worked very well. The people the model ranked in the top 10% in terms of likelihood to return a phone contained about 40% of all actual returners on the list. In other words, the group that the model thought was highest risk included a relatively large percent of the high-risk people.
+				</div>
+				
+				<div class="row para_text">
+					It’s easy see how it might be cost effective to intervene with these 10%, because if future results mirror the results based on the past data, it will potentially impact 40% of the potential returners, not just 10% of the potential returners, even though we are paying for an intervention with only 10% of the new-smartphone-buying customers. Exactly what (top) percentage of the rank-ordered list should receive the intervention, to be most profitable, can be easily determined by the economics of the situation; it would simply be a tradeoff among the cost of providing the intervention, the benefit of converting a returner into a non-returner if the intervention is implemented, and how well the predictive model can, indeed, predict who would be more likely to be a returner. The optimal percentage of customers with whom to intervene may be, for example, the top 8%, or the top 13%, or even the top 30%. (In many cases of which we are aware, interventions more than pay for themselves.)
+				</div>
+
+				<div class="row para_text">
+					Briefly consider another “intervention” example. A healthcare provider considers an intervention for members who, without an intervention, are reasonably likely to have a hospital stay in the near future. (Smartphone returns are certainly different from hospital stays; however, the intervention-related analytical process involved is extremely similar.) To cut down on unnecessary hospital stays, the intervention program can take on many forms, such as a weekly phone call to remind members to take their medications. In this real-world illustration, “stayers” are members who will need to be hospitalized for at least 15 days within a one-year time period. We used a predictive model to rank-order each member from high to low by the probability that a member is a stayer (without an intervention.) The top 10% of the rank-ordered list captured a very high value of 53% of all actual stayers. Of course, here also, one needs to weigh the cost of the interventions versus the cost-savings in reduced hospital stays that result from the intervention, to determine with whom to intervene.
+
+				</div>
+
+				<div class="row para_text">
+					There is a side to the overall intervention-decision-process that does not attract as much analytical attention: the issue of optimizing which intervention works best — i.e., which intervention is most cost effective. The key reason that this side of things is not often implemented is simple — lack of data. One would have to try different interventions on different populations and record the results of those different intervention strategies over a potentially long period of time. Usually, different intervention strategies would have to be implemented on mutually exclusive groups of people. Companies do not want to invest several years of paying for different interventions, knowing that many or most may not be sufficiently profitable. However, the same attitude was put forth “way back when,” when data to determine customer lifetime value (CLV) was being discussed at many companies. The data were not available at most companies and the prospect of collecting such data for many years was viewed as too daunting. However, nowadays, nearly all large- and mid-sized companies have sufficient data to develop a CLV model. One might make the case that when it comes to data for intervention decisions, short-sightedness is alive and well. However, advances in machine learning may help change this perspective when it comes to selecting an optimal intervention.
+
+				</div>
+				
+				
+
+				<div class="row para_text">
+					There are many marketing and business problems where customers take undesirable actions that can negatively impact organizations and providers. Fortunately, marketers can effectively disrupt these actions with an intervention. Optimizing, at least for a given intervention, is now being recognized as a useful implementation in many situations. We wouldn’t be surprised if the term “intervention analytics” becomes a well-known phrase, given the mushrooming of the field of marketing analytics, and the potential upside for companies.
+				</div>
+					
+				
+
+				
+				<div class="row para_text">
+					Source:<u><a href="https://hbr.org/2018/05/using-analytics-to-prevent-customer-problems-before-they-arise">https://hbr.org/2018/05/using-analytics-to-prevent-customer-problems-before-they-arise</a></u>
+				</div>
+
+				<hr>
+					<div class="row">
+						
+						<div class="col-sm-1 line_img">
+						 	<a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.analyticsleaderssummit.com%252Fblog-1%252Fglobal-emotion-analytics-market-research-by-company-type-and-applications&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Freturn%2Fclose%3Ferror_code%3D4201%26error_message%3DUser%2Bcanceled%2Bthe%2BDialog%2Bflow%23_%3D_&display=popup&locale=en_GB">
+								<img src="../blog1/blackface.jpg"  onmouseover="this.src='../blog1/faceblue.png'" onmouseout="this.src='../blog1/blackface.jpg'">
+							</a>	
+						</div>
+						<div class="col-sm-1 line_img" >
+							<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.analyticsleaderssummit.com%2Fblog-1%2Fglobal-emotion-analytics-market-research-by-company-type-and-applications&original_referer=https%3A%2F%2Fsocial-blog.wix.com%2Fglobal-emotion-analytics-market-research-by-company-type-and-applications%3FcacheKiller%3D1528540179748%26compId%3DTPASection_jhznpb1j%26deviceType%3Ddesktop%26fullLocale%3Den-my%26height%3D2018%26instance%3DjvT7t_9nIfroTbtPDPpFZh2nwrvKGIeMG-SS6A4bIYo.eyJpbnN0YW5jZUlkIjoiNzBkOTZiNzctODhiOS00N2U2LWI0NTUtMWMyNmQwNmQzY2U4IiwiYXBwRGVmSWQiOiIxNGJjZGVkNy0wMDY2LTdjMzUtMTRkNy00NjZjYjNmMDkxMDMiLCJtZXRhU2l0ZUlkIjoiYmVhYzQ0MmItODgwYy00MDEzLWE3MTgtNmI2Yjk3YzllMmZmIiwic2lnbkRhdGUiOiIyMDE4LTA2LTA5VDEzOjExOjIxLjM1OFoiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjQyLjEwOC4xNjguMjcvNDUyMDUiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiNmUzNzE2NWUtOGZlMS00OTNjLTgxZDUtOThiODM5ODBkNzIzIiwiYmlUb2tlbiI6ImNlNzUyZjVjLTAwYjUtMDdmNS0xMzRkLTc3NGQ0N2E0ZGUxNyIsInNpdGVPd25lcklkIjoiNTBiMTVhMzMtMjZmZC00MDYyLTlmNTItZjdmYzQ3ZDBkMDIzIn0%26locale%3Den%26pageId%3Docr5j%26section-url%3Dhttps%253A%252F%252Fwww.analyticsleaderssummit.com%252Fblog-1%252F%26target%3D_top%26viewMode%3Dsite%26vsi%3Da18b1f92-03d3-4945-940a-ba0394edc4d9%26width%3D980">
+								<img src="../blog1/tweets.png"  onmouseover="this.src='../blog1/bluetweets.png'" onmouseout="this.src='../blog1/tweets.png'">
+							</a>
+						</div>
+						<div class="col-sm-1 line_img">
+							<a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2Fup%2F%3Fcontinue%3Dhttps%3A%2F%2Fplus.google.com%2Fshare%3Furl%253Dhttps%3A%2F%2Fwww.analyticsleaderssummit.com%2Fblog-1%2Fglobal-emotion-analytics-market-research-by-company-type-and-applications&followup=https%3A%2F%2Fplus.google.com%2Fup%2F%3Fcontinue%3Dhttps%3A%2F%2Fplus.google.com%2Fshare%3Furl%253Dhttps%3A%2F%2Fwww.analyticsleaderssummit.com%2Fblog-1%2Fglobal-emotion-analytics-market-research-by-company-type-and-applications&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+								<img src="../blog1/blackgoole+.jpg"   onmouseover="this.src='../blog1/bluegoole+.png'" onmouseout="this.src='../blog1/blackgoole+.jpg'">
+							</a>
+						</div>
+						<div class="col-sm-1 line_img">
+							<a href="">
+								<img src="../blog1/blackattach.jpg"  onmouseover="this.src='../blog1/greyattach.png'" onmouseout="this.src='../blog1/blackattach.jpg'">
+							</a>
+						</div>
+						
+						
+					</div>
+				<hr>	
+
+				<div class="row">
+					<div class="col-sm-11"></div>
+					<div class="col-sm-1"><img src="../blog1/heart.png" width="20" height="18"></div>
+				</div>
+			</div>
+		</div>
+
+
+			<div class="container" style="max-width: 940px;width: 100%;padding:0px">	
+				<div class="row" style=" padding-top:28px;">
+					<div class="col-sm-11" style="font-size: 20px">
+						Recent Posts
+					</div>
+					<div class="col-sm-1">
+						<a href="../../blog.html">See All</a>
+					</div>
+				</div>
+
+				<div class="row" style="padding-top: 20px;">
+					<div class="col-sm-4 iframe" style="padding-bottom: 15px" >
+						<div class="container border">
+							<div class="row" >
+								<a href="../blog1/blogpage1.html"><img src="../blog1/aam.png" class="img-responsive" height="220"></a>	
+							</div>
+							<div class="container" style="font-size: 18px">
+								<a href="../blog1/blogpage1.html">Global Emotion Analytics Market Research By... </a>
+								<hr>
+								<div class="row">
+									<div class="col-sm-8" style="font-size: 13px; margin-top: 5px;">
+										<a href="#">Write a comment</a>
+									</div>
+									<div class="col-sm-2"></div>
+									<div class="col-sm-2">
+										<img src="../blog1/heart.png" width="18" height="12" >
+									</div>
+								</div> 
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4 iframe" style="padding-bottom: 15px" >
+						<div class="container border">
+							<div class="row" >
+								<a href="../blog2/blog2.html"><img src="../../images/blog_girl.png" class="img-responsive" height="220"></a>	
+							</div>
+							<div class="container" style="font-size: 18px">
+								<a href="../blog2/blog2.html">How Big Data Analytics Can Boost an Operator’s Top...</a> 
+								<hr>
+								<div class="row">
+									<div class="col-sm-8" style="font-size: 13px; padding-top: 5px;">
+										<a href="#">Write a comment</a>
+									</div>
+									<div class="col-sm-2"></div>
+									<div class="col-sm-2">
+										<img src="../blog1/heart.png" width="18" height="12">
+									</div>
+								</div> 
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4 iframe" style="padding-bottom: 15px" >
+						<div class="container border">
+							<div class="row" >
+								<a href="../blog3/blog3.html"><img src="../../images/plat-change.png" class="img-responsive" height="220"></a>	
+							</div>
+							<div class="container" style="font-size: 18px">
+								<a href="../blog3/blog3.html">Data analytics and e-platforms changing the ..</a>
+								<hr>
+								<div class="row">
+									<div class="col-sm-8" style="font-size: 13px; margin-top: 5px;">
+										<a href="#">Write a comment</a>
+									</div>
+									<div class="col-sm-2"></div>
+									<div class="col-sm-2">
+										<img src="../blog1/heart.png" width="18" height="12" >
+									</div>
+								</div> 
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="container" style="border: 1px solid grey;text-align:center;padding: 40px;margin-top: 20px">
+					<i><u>Log in</u></i> to leave a comment!
+				</div>
+			</div>	
+
+	</div>
+
+</body>
+</html>
+
+
+
+
+

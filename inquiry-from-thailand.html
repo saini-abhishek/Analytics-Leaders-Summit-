@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Analytics Leaders' Summit-Asia 2018 | Events</title>
+
+	<!--Bootstrap-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ticket.css">
+</head>
+<body>
+	<!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="myNavbar"style="background-color: #000; color: #fff; font-weight: bold; ">
+  <!-- Brand/logo -->
+
+  <a class="navbar-brand" id="logo" href="index.html"><img class="img-responsive" src="images/logo.png" height="62" width="94"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- Links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Past Events</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Upcoming Events</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="Philippines-new.html">ALS Philippines 2018</a>
+        <a class="dropdown-item" href="thailand.html">ALS Thailand 2018</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"href="blog.html">Blog</a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+
+<div class="container-fluid">
+	<div class="jumbotron" style="background-color: #fff;">
+		<div class="container" style="max-width: 1000px; width: 100%">
+			<div class="row" style="padding-top: 30px">
+				<div class="col-sm-12">
+					<button style="background-color: #fff; border:0px;"><a href="inquiry-thailand-next.html" style="color: #000; text-decoration: none;"><  Back</a></button>
+				</div>
+				
+			</div>
+
+			<div class="row" style="padding-top: 50px;">
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-sm-12" style="padding: 0">
+							<h2>Please Fill up the form.</h2>
+						</div>
+					</div>
+					<div class="row">
+						<form name="thailandenq" action="thailand-enq.php" method="POST">
+							<div class="row">
+
+								<div class="col-sm-6">
+								<div class="form-group">
+									*First Name:<br>
+									<input type="text" class="form-control" id="fname" name="FirstName" required="required" style="max-width: 230px; width: 100%;">
+								</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										*Last Name:<br>
+										<input type="text" class="form-control" id="lname" name="LastName" required="required" style="max-width: 245px; ">
+									</div>
+								</div>
+							</div>
+							
+						
+					</div>
+					<div class="row">
+						<div class="col-sm-9" style="padding: 0;">
+							<div class="form-group">
+								*Corporate Email:<br>
+								<input type="email" class="form-control" id="email" name="corporateEmail" required="required">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-9" style="padding: 0;">
+							<div class="form-group">
+								*Phone Number(Include Country Code):<br>
+								<input type="number" class="form-control" id="phone" name="phone" required="required">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-9" style="padding: 0;">
+							<div class="form-group">
+								*Company Name:<br>
+								<input type="text" class="form-control" id="compname" name="CompanyName" required="required">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-9" style="padding: 0;">
+							<div class="form-group">
+								*Designation:<br>
+								<input type="text" class="form-control" id="desig" name="Designation" required="required">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-9" style="padding: 0;">
+							<div class="form-group">
+								Number of Attendees:<br>
+								<input list="NumberofAttendees" class="form-control" name="NumOfAttendies" required="required">
+								<datalist id="NumberofAttendees">
+									<option value="1">
+									<option value="2">
+									<option value="3">
+									<option value="4">
+									<option value="5">
+									<option value="More than 5">
+								</datalist>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-9" style="padding: 0;">
+							<div class="form-group">
+								*Interested to participate at:<br>
+								<input type="checkbox" name="Twodayconf"  value="Two Days Conference27/28 June">Two Days Conference - 28/29 August<br>
+								<input type="checkbox" name="Twodayconf" value="wrkshpIntro2R">Workshop - Intro to R 20/21 August<br>
+								
+								<input type="checkbox" name="Twodayconf" value="WrkShpTnro2McLearning">Workshop - Intro to Machine Learning 22/23 August<br>
+								<input type="checkbox" name="Twodayconf" value="WrkShpAdvMcLearning">Workshop - Adv Machine Learning 24/27 August<br>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-9" style="padding: 0;">
+							<div class="form-group">
+								Want to add a comment?<br>
+								<textarea cols="60" rows="7" id="comments" name="comments" class="form-control"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-9" style="padding: 0;">
+							<div class="form-group">
+								<input type="Submit" class="form-control" id="continue" name="Continue" value="Submit" style="background-color: #333; color: #fff; height: 50px;">
+							</div>
+						</div>
+					</div>
+
+				</form>
+				</div>
+				<div class="col-sm-3" style="border: 1px solid lightgrey;  max-width: 300px; width: 100%; max-height: 300px;">
+					
+				
+					<div class="row" style="padding: 20px;">
+						<div class="col-sm-12">
+							<h5>Analytics Leaders Summit Thailand - Conference Inquiry<br></h5>
+							<hr/>
+							<p>28 Aug, 9:00 AM – 29 Aug, 6:00 PM
+							Pullman Bangkok Grande Sukhumvit<br>
+							</p>
+							
+						</div>
+					</div>
+					
+					</div>
+			</div>
+		</div>
+			
+			
+		</div>
+	</div>
+</div>
+
+		<div class="social-links">
+		  <ul>
+		    <li><a href="https://www.linkedin.com/company/432088?trk"><img src="images/linkedin.png" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a></li>
+		    <li><a href="https://twitter.com/enigmacg?lang=en"><img src="images/twitter.png" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"/></a></li>
+		    <li><a href="https://www.facebook.com/analyticsleadersummit/"><img src="images/facebook.png" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"/></a></li>
+		    <li><a href="https://www.youtube.com/channel/UCgTMN4lwPTRrEFWIQ2_r4HQ"><img src="images/you.png" width="36" height="36"style="margin-left: -2px;"/></a></li>
+		  </ul>
+		</div>
+
+<div class="container-fluid bottom"></div>
+</body>
+</html>

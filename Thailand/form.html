@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style type="text/css">
+    	* {
+    		margin: 0;
+    		padding: 0;
+    		font-family: 'Open Sans',serif;
+    	}
+    	.form-control {
+    		width: 180px;
+    	}
+    	.container {
+    		width: 470px;
+        padding: 0;
+        margin: 0;
+    	}
+    </style>
+
+    <script type="text/javascript">
+      /*function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data)0;
+        $data = htmlspecialchars($data);
+        return $data;
+      }*/
+    </script>
+	<title>from</title>
+</head>
+<body>
+	<div class="container">
+		<form name="contactform" method="post" action="default-new.php">
+                      <div class="row">
+                        <div class="col-sm-5">
+                        <div class="form-group" >
+                        <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+                        
+                      </div>
+                      <div class="form-group " >                    
+                        <input type="email" class="form-control" id="email" placeholder="Email*" name="email" required="required">
+                        
+                      </div>
+                      <div class="form-group " >                    
+                        <input type="number" class="form-control" id="phone" placeholder="Phone*" name="phone" required="required">
+                        
+                      </div>
+                      <div class="form-group " >                    
+                        <input type="text" class="form-control" id="company" placeholder="Company*" name="company" required="required">
+                        
+                      </div>
+                      <div class="form-group " >                    
+                        <input type="text" class="form-control" id="designation" placeholder="Designation*" name="designation" required="required"></div>
+                        
+                        </div>
+                        <div class="col-sm-1" style="float: right; padding: 0">
+                        <div class="form-group " >                    
+                        <textarea name="message" rows="10" cols="15" placeholder="message" class="form-control" id="message"></textarea>
+                        </div>
+                        </div>
+                        <div class="row" style="text-align: right; width: 550px; ">
+                            <div class="col-sm-7" style="padding: 0"></div>
+                            <div class="col-sm-1" style="padding-left: 30px">
+                              <button type="submit" name="send" id="btn1" class="btn" style="background-color: rgb(156,49,206); color: #fff;">Send</button>
+                            </div>
+                            
+                            <span id="success_message" class="text-success"></span>
+                            <span id="error_message" class="text-danger"></span>
+                        </div>
+                    
+
+                      </div>
+                    </form>
+
+                    <script language="JavaScript" type="text/javascript" xml:space="preserve">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please enter your Name");
+frmvalidator.addValidation("email","maxlen=50");
+frmvalidator.addValidation("email","req");
+frmvalidator.addValidation("email","email");
+frmvalidator.addValidation("telephone","req","Please enter your Landline/ Mobile Number.");
+frmvalidator.addValidation("telephone","maxlen=50");
+frmvalidator.addValidation("telephone","numeric");
+frmvalidator.addValidation("comments","maxlen=1000");
+</script>
+	</div>
+	
+
+</body>
+</html>

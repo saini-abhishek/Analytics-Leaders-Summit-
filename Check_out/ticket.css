@@ -1,0 +1,29 @@
+body{
+    		margin:0;
+			padding: 0;
+			font-family: 'Open Sans', sans-serif;
+    	}
+
+.social-links {
+	position: fixed; 
+	left: 0; 
+	top: 200px;  
+	width: 50px; 
+	height: auto; 
+}
+.social-links ul{
+	margin: 0;
+	padding: 0;
+}
+.social-links li {
+	padding: 5px 15px;
+	list-style: none;
+}
+
+.bottom {
+	height: 40px;
+	background-color: #444;
+	width: 100%;
+	border-radius: 0px;
+	bottom: 0;"></div>
+}

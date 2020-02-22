@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	  <title>ticket form</title>
+	  <style>
+	  	.container{
+	  		max-width: 720px;
+	  		width: 100%;
+	  		
+	  	
+	  	}
+	  	.ticket{
+	  		font-size: 30px;
+	  	}
+	  	
+	  	.total{
+	  		font-size: 22px;
+	  		padding-top:15px;
+	  	}
+	  	*{
+	  		
+	  		margin: 0;
+	  		padding: 0;
+	  	}
+	  	.round{
+	  		padding-top: 30px;
+	  	}
+		@media only screen and (max-width: 600px) {
+		    .round{
+		        padding-top: 10px;
+		    }
+		}
+		.Checkout{
+			padding-top: 20px;
+		}
+		#Checkout{
+			height: 50px;
+			width:100%;
+			max-width: 380px;
+			color: #fff;
+			border: 0px;
+			background-color: lightgrey;
+		}
+		#Checkout:hover{
+			background-color: rgb(84,92,116);
+		}
+		.button{
+			border:0px;
+			background-color: #fff;
+			cursor: pointer;
+		}
+		.box{
+		border:1px solid;
+		border-color: lightgrey;
+		}
+
+		.box:hover {
+		border-color:#000;
+		}
+		#info{
+			cursor: pointer;
+		}
+		#lessinfo{
+			cursor: pointer;
+		}
+	  	
+	  </style>
+	
+</head>
+<body>
+		<!-- <div id="one">1</div>
+		<div id="same">200</div>
+		<div id="here"></div>
+		 
+	
+		<button onclick="add()">-</button> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 font-weight-bold ticket">Tickets</div>
+				<div class="col-sm-2">Price</div>
+				<div class="col-sm-2">Qty</div>
+				<div class="col-sm-2">Total</div>
+
+			</div>
+			<hr>
+			<div class="row round">
+				<div class="col-sm-6">
+					2nd Round Promotion
+					<p style="display: none" id="information">This ticket will give you access to the two days of conference. You can purchase your tickets to any of the workshops separately.</p>
+					<p style="font-size: 14px" id="info" onclick="info()">More info+</p>
+					<p style="font-size: 14px;display: none" id="lessinfo" onclick="lessinfo()">Less info-</p>
+
+				</div>
+				<div class="col-sm-2">$499</div>
+				<div class="col-sm-2">
+					<div class="box" style="width: 70px">
+					<button class="button" style="padding-right: 5px;padding-left: 8px" onclick="minus()">-</button>
+					<label id="number">0</label>
+					<button class="button" style="padding-left : 5px" onclick="plus()">+</button>
+					</div>				
+				</div>
+				<div class="col-sm-2">$<label id="cost">0</label></div>
+			</div>
+			<hr>
+			<!-- conference -->
+			<div class="row round">
+				<div class="col-sm-6">
+					conference
+					<p style="display: none" id="information">This ticket will give you access to the two days of conference. You can purchase your tickets to any of the workshops separately.</p>
+					<p style="font-size: 14px" id="info" onclick="info()">More info+</p>
+					<p style="font-size: 14px;display: none" id="lessinfo" onclick="lessinfo()">Less info-</p>
+
+				</div>
+				<div class="col-sm-2">$499</div>
+				<div class="col-sm-2">
+								
+				</div>
+				<div class="col-sm-2">$<label id="conference_cost">499</label></div>
+			</div>
+			<hr>
+			<div class="row total">
+				<div class="col-sm-6"></div>
+				<div class="col-sm-2">Total</div>
+				<div class="col-sm-2"></div>
+				<div class="col-sm-2">$<label id="cost2">499</label></div>
+			</div>
+			<div class="row Checkout">
+				<div class="col-sm-6"></div>
+				<div class="col-sm-6">
+					<button id="Checkout" onclick="myFunction()">Checkout</button>
+				</div>
+			</div>
+			<div class="row font-weight-bold" style="font-size: 14px">
+				Discount Packages:<br>
+					*5% discount on minimum 2 workshop.<br>
+					*10% discount on minimum 4 workshop.<br>
+					*15% discount on minimum 6 workshop.
+
+			</div>
+		</div>
+
+	<script>
+			function myFunction() {
+			    alert("Hello! I am an alert box!");
+			}
+			//incremeant cost
+			var x,z,a,b,c,d,discount;
+			function plus() {
+				   x = document.getElementById("cost").innerHTML;
+				   c = document.getElementById("conference_cost").innerHTML;
+				   z = parseInt(x);
+				   d = parseInt(c);
+				  z = z+499;
+				  document.getElementById("cost").innerHTML= z;
+				  d = d+z
+				  
+				   		
+
+				    a = document.getElementById("number").innerHTML;
+				  b= parseInt(a);
+				  b = b+1;
+				  document.getElementById("number").innerHTML= b;
+				 
+   				 if(b==1)
+				   {
+				   	document.getElementById("cost2").innerHTML= d;
+				   }	
+   				 else if(b==2 || b==3)
+						{
+							discount = d - d*5/100;
+							document.getElementById("cost2").innerHTML= discount;
+
+						}	
+				 else if(b==4 || b==5)
+						{
+							discount = d - d*10/100;
+							document.getElementById("cost2").innerHTML= discount;
+
+						}
+				else if(b==6 || b>6)
+						{
+							discount = d - d*15/100;
+							document.getElementById("cost2").innerHTML= discount;
+
+						}		
+   				 
+			}
+
+			 	
+			//minus cost
+			function minus() 
+			{
+				   x = document.getElementById("cost").innerHTML;
+				   c = document.getElementById("conference_cost").innerHTML;
+				   z= parseInt(x);
+				   d = parseInt(c);
+				  if(z>0)
+				  {
+				  	 z = z-499;
+					  document.getElementById("cost").innerHTML= z;
+
+					 d = d+z;
+					  /*document.getElementById("cost2").innerHTML= d; */		
+
+					   a = document.getElementById("number").innerHTML;
+					   b= parseInt(a);
+					  b = b-1;
+					   
+					  document.getElementById("number").innerHTML= b;
+
+
+					   if(b==1 || b==0)
+				   {
+				   	document.getElementById("cost2").innerHTML= d;
+				   }	
+   				 else if(b==2 || b==3)
+						{
+							discount = d - d*5/100;
+							document.getElementById("cost2").innerHTML= discount;
+
+						}	
+				 else if(b==4 || b==5)
+						{
+							discount = d - d*10/100;
+							document.getElementById("cost2").innerHTML= discount;
+
+						}
+				else if(b==6 || b>6)
+						{
+							discount = d - d*15/100;
+							document.getElementById("cost2").innerHTML= discount;
+
+						}	
+					  
+
+				  }
+				 
+			}
+
+
+			
+			 
+			//info function
+
+			function info(){
+				document.getElementById("information").style.display = "block";
+				document.getElementById("info").style.display = "none";
+				document.getElementById("lessinfo").style.display = "block";
+			}
+			function lessinfo(){
+				document.getElementById("information").style.display = "none";
+				document.getElementById("info").style.display = "block";
+				document.getElementById("lessinfo").style.display = "none";
+			}
+			
+		
+	</script>	
+</body>
+</html>

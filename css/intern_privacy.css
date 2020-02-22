@@ -1,0 +1,54 @@
+@media(min-width: 1024px){
+	#logo {
+ 	margin-left: 180px;
+}
+}
+
+@media(min-width: 1024px){
+#collapsibleNavbar {
+	margin-right: 180px;
+}
+}
+
+.navbar {
+	font-family: 'PT Serif', serif;
+}
+
+.bottom {
+	background-color: rgb(36,35,35);
+	color: #fff;
+	border-radius: 0px;
+	bottom: 0;
+	font-family: 'Open Sans', serif;
+	padding: 50px;
+	
+}
+
+.social-links {
+	position: fixed; 
+	left: 0; 
+	top: 200px;  
+	width: 50px; 
+	height: auto; 
+}
+.social-links ul{
+	margin: 0;
+	padding: 0;
+}
+.social-links li {
+	padding: 5px 15px;
+	list-style: none;
+}
+
+.bottom_list {
+	list-style: none;
+}
+
+.bottom_list li {
+	list-style: none;
+}
+
+.bottom_list a {
+	color: #fff;
+	text-decoration: none;
+}

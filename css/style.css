@@ -1,0 +1,117 @@
+@media only screen and (max-width: 900px) {
+		    body{
+		        width:900px;
+		    }
+		
+		}
+@media only screen and (max-width: 585px) {
+		    .vl{
+		        display:none;
+		    }
+		
+		}
+body{
+	margin:0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #eee;
+}
+
+
+@media(min-width: 1024px){
+	#logo {
+ 	margin-left: 180px;
+}
+}
+
+@media(min-width: 1024px){
+#collapsibleNavbar {
+	margin-right: 180px;
+}
+}
+
+.social-links {
+	position: fixed; 
+	left: 0; 
+	top: 200px;  
+	width: 50px; 
+	height: auto; 
+}
+.social-links ul{
+	margin: 0;
+	padding: 0;
+}
+.social-links li {
+	padding: 5px 15px;
+	list-style: none;
+}
+
+.bottom {
+	height: 40px;
+	background-color: #444;
+	width: 100%;
+	border-radius: 0px;
+	bottom: 0;
+
+}
+
+
+.tick{
+	  		max-width: 720px;
+	  		width: 100%;
+	  		padding: 0;
+	  		padding-top: 30px;
+	  	
+	  	}
+	  	.ticket{
+	  		font-size: 30px;
+	  	}
+	  	
+	  	.total{
+	  		font-size: 22px;
+	  		padding-top:15px;
+	  	}
+	  	*{
+	  		
+	  		margin: 0;
+	  		padding: 0;
+	  	}
+	  	.round{
+	  		padding-top: 30px;
+	  	}
+		@media only screen and (max-width: 600px) {
+		    .round{
+		        padding-top: 10px;
+		    }
+		}
+		.Checkout{
+			padding-top: 20px;
+		}
+		#Checkout{
+			height: 50px;
+			width:100%;
+			max-width: 380px;
+			color: #fff;
+			border: 0px;
+			background-color: rgb(84,92,116);
+		}
+		
+		.button{
+			border:0px;
+			background-color: #fff;
+			cursor: pointer;
+		}
+		.box{
+		border:1px solid;
+		border-color: lightgrey;
+		}
+
+		.box:hover {
+		border-color:#000;
+		}
+		#info{
+			cursor: pointer;
+		}
+		#lessinfo{
+			cursor: pointer;
+		}
